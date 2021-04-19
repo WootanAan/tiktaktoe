@@ -10,7 +10,7 @@ body {
 .kotak {
 	width: 100px;
 	height: 100px;
-	background-color: linear-gradient(to right top, #000, #fff);
+	background: linear-gradient(to right top, #000, #fff);
 	margin: 10px;
 	border-radius: 50%;
 	box-shadow: -12px 10px 5px rgba(0,0,0,0.3);
@@ -42,4 +42,12 @@ body {
 	left: 0;
 	color: #fff;
 	opacity: 0.4;
+}
+
+@media (max-width: 450pc) {
+	.kotak {
+		width: 25vw;
+		height: 25vw;
+		margin: 2vw;
+	}
 }

@@ -43,3 +43,11 @@ body {
 	color: #fff;
 	opacity: 0.4;
 }
+
+@media (max-width: 450px) {
+	.kotak {
+		width: 25vw;
+		height: 25vw;
+		margin: 2vw;
+	}
+}
