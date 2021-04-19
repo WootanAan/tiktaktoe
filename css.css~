@@ -10,13 +10,17 @@ body {
 .kotak {
 	width: 100px;
 	height: 100px;
-	background-color: red;
+	background-color: linear-gradient(to right top, #000, #fff);
 	margin: 10px;
 	border-radius: 50%;
 	box-shadow: -12px 10px 5px rgba(0,0,0,0.3);
 	position: relative;
 	top: -10px;
 	left: 12px;
+	border-top: 3px solid #fff;
+	border-right: 3px solid #fff;
+	border-bottom: 3px solid #646464;
+	border-left: 3px solid #646464;
 }
 
 #restart {
@@ -37,5 +41,5 @@ body {
 	top: 0;
 	left: 0;
 	color: #fff;
-	opacity:
+	opacity: 0.4;
 }

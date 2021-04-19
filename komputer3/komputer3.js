@@ -7,7 +7,7 @@ function cek(index) {
 		css = "border-radius: 0; top: 0; left: 0; box-shadow: 0 0 20px rgba(255,255,255,0.3);";
 		if(kotak[index - 1] != true && kotak[index - 1] != false) {
 			kotak[index - 1] = true;
-			document.getElementById('kotak'+index).style = "background-color: #B4D5FF;" + css;
+			document.getElementById('kotak'+index).style = "background: #194DFF;" + css;
 			menangkah();
 			if(winner == "kosong") {
 				setTimeout(komputer, 300);
@@ -22,7 +22,7 @@ function komputer() {
 		komputer();
 	} else {
 		kotak[acak - 1] = false;
-		document.getElementById('kotak'+acak).style = "background-color: #FF9210;" + css;
+		document.getElementById('kotak'+acak).style = "background: #FF9210;" + css;
 	}
 	menangkah();
 }
