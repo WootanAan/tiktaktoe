@@ -1,11 +1,13 @@
 var kotak = [];
 var winner = "kosong";
+var css = "border-radius: 0; top: 0; left: 0; box-shadow: 0 0 20px rgba(255,255,255,0.3);";
 
 function cek(index) {
 	if(winner == "kosong") {
+		css = "border-radius: 0; top: 0; left: 0; box-shadow: 0 0 20px rgba(255,255,255,0.3);";
 		if(kotak[index - 1] != true && kotak[index - 1] != false) {
 			kotak[index - 1] = true;
-			document.getElementById('kotak'+index).style = "border-radius: 0; background-color: blue";
+			document.getElementById('kotak'+index).style = "background-color: #B4D5FF;" + css;
 			menangkah();
 			if(winner == "kosong") {
 				setTimeout(komputer, 300);
@@ -20,7 +22,7 @@ function komputer() {
 		komputer();
 	} else {
 		kotak[acak - 1] = false;
-		document.getElementById('kotak'+acak).style = "border-radius: 0; background-color: yellow";
+		document.getElementById('kotak'+acak).style = "background-color: #FF9210;" + css;
 	}
 	menangkah();
 }
@@ -48,7 +50,7 @@ function menangkah(){
 function menang(pemenang) {
 	if(pemenang == "pemain") {
 		winner = "pemain";
-		document.getElementById('selamat').innerHTML = "pemain menang";
+		document.getElementById('selamat').innerHTML = "PEMAIAN MENANG";
 		document.getElementById('restart').style = "display: block;";
 	} else if(pemenang = "komputer") {
 		winner = "komputer";
@@ -59,10 +61,11 @@ function menang(pemenang) {
 
 function ulang() {
 	document.getElementById('restart').style = "display: none;";
+	css = "border-radius: 50%; top: -10px; left: 12px; box-shadow: -12px 10px 5px rgba(0,0,0,0.3);";
 	kotak = [];
 	winner = "kosong";
 	for(i = 1; i <= 9; i++) {
-		document.getElementById('kotak'+i).style = "border-radius: 50%; background-color: red";
+		document.getElementById('kotak'+i).style = "background-color: red;" + css;
 	}
-	document.getElementById('selamat').innerHTML = "pemain menang";
+	document.getElementById('selamat').innerHTML = "";
 }
