@@ -50,7 +50,7 @@ function menangkah(){
 function menang(pemenang) {
 	if(pemenang == "pemain") {
 		winner = "pemain";
-		document.getElementById('selamat').innerHTML = "PEMAIAN MENANG";
+		document.getElementById('selamat').innerHTML = "PEMAKAI MENANG";
 		document.getElementById('restart').style = "display: block;";
 	} else if(pemenang = "komputer") {
 		winner = "komputer";

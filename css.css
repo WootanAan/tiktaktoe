@@ -51,3 +51,12 @@ body {
 		margin: 2vw;
 	}
 }
+
+center {
+	color: #fff;
+}
+
+a {
+	color: #eee;
+	line-height: 30px;
+}
